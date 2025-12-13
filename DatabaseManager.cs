@@ -61,7 +61,7 @@ namespace CodingTracker
 
         public void InsertRowIntoDB(string name, string startDate, string endDate)
         {
-            string insertSql = $"INSERT INTO coding_tracker (Name, StartDate, EndDate) VALUES ('{name}', '{startDate}', '{endDate}'";
+            string insertSql = $"INSERT INTO coding_tracker (Name, StartDate, EndDate) VALUES ('{name}', '{startDate}', '{endDate}')";
             ExecuteNonQuery(insertSql);
             Console.WriteLine("Insert in to database was succesfully!");
         }
